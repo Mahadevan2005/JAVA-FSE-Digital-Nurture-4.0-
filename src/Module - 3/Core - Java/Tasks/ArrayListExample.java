@@ -22,5 +22,6 @@ public class ArrayListExample {
                 System.out.println(al.get(i));
             }
         }
+        s.close();
     }
 }
