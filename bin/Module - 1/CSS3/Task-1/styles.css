@@ -1,0 +1,13 @@
+/* styles.css */
+
+/* Header styles */
+h1 {
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 18px;
+    color: #333;
+}

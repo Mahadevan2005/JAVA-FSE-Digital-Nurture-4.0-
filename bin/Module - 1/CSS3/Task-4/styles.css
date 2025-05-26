@@ -1,0 +1,22 @@
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #cccccc;
+    color: #333333;
+}
+
+/* HEX and RGBA usage */
+h1 {
+    color: #0066cc;
+    background-color: rgba(0, 102, 204, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Gradient styling */
+section h2 {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

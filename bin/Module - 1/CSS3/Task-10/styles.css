@@ -1,0 +1,38 @@
+/* Base styles */
+nav a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+img.responsive-img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.eventCard {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .eventCard {
+        width: 100%;
+    }
+}
+
+/* Bonus: Flexbox */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

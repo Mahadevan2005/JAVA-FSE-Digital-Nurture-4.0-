@@ -1,0 +1,32 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Element selector */
+h2 {
+    font-size: 24px;
+    color: #444;
+}
+
+/* ID selector */
+#mainHeader {
+    background-color: #eeeeee;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Class selector */
+.eventCard {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    background-color: #fafafa;
+}
+
+/* Group selector */
+h3, p {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.5;
+}

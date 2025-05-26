@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Feedback</title>
+    <style>
+        #feedbackForm {
+            width: 350px;
+        }
+        #charCount {
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Event Feedback</h2>
+
+    <form id="feedbackForm">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" onblur="validatePhone()" placeholder="1234567890">
+
+        <label for="eventSelect">Select Event:</label>
+        <select id="eventSelect" onchange="showFee()">
+            <option value="">Choose</option>
+            <option value="music">Music - ₹200</option>
+            <option value="sports">Sports - ₹150</option>
+        </select>
+        <p id="fee"></p>
+
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" onkeyup="countChars()"></textarea>
+        <p id="charCount">Characters: 0</p>
+
+        <button type="button" onclick="submitFeedback()">Submit</button>
+    </form>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFYDy0dtqY-GmpwssQR-DKlQgrvsRy47FokQ&s" alt="Event" ondblclick="enlargeImage(this)" style="width:150px;">
+
+    <script>
+        function validatePhone() {
+            const phone = document.getElementById('phone').value;
+            if (!/^\d{10}$/.test(phone)) {
+                alert("Invalid phone number");
+            }
+        }
+
+        function showFee() {
+            const feeText = document.getElementById('eventSelect').selectedOptions[0].text;
+            document.getElementById('fee').textContent = `Fee: ${feeText.split('-')[1]}`;
+        }
+
+        function countChars() {
+            const length = document.getElementById('feedback').value.length;
+            document.getElementById('charCount').textContent = `Characters: ${length}`;
+        }
+
+        function submitFeedback() {
+            alert("Thank you for your feedback!");
+        }
+
+        function enlargeImage(img) {
+            img.style.width = "300px";
+        }
+    </script>
+
+</body>
+</html>
