@@ -1,0 +1,16 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.description {
+    font-style: italic;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}

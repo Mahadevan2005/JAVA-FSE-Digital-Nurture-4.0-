@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration Form</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1>Register for an Event</h1>
+
+    <form id="registrationForm">
+        <label>Name: <input type="text" name="name" required></label><br><br>
+        <label>Email: <input type="email" name="email" required></label><br><br>
+        <label>Event:
+            <select name="event">
+                <option value="music">Music Fest</option>
+                <option value="tech">Tech Talk</option>
+            </select>
+        </label><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="error"></div>
+
+</body>
+</html>
